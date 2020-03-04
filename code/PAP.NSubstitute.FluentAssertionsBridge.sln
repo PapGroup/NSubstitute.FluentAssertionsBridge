@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAP.NSubstitute.FluentAssertionsBridge", "src\PAP.NSubstitute.FluentAssertionsBridge\PAP.NSubstitute.FluentAssertionsBridge.csproj", "{11D13AC5-2FA6-4E48-AAE4-89D3681C37F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAP.NSubstitute.FluentAssertionsBridge", "src\PAP.NSubstitute.FluentAssertionsBridge\PAP.NSubstitute.FluentAssertionsBridge.csproj", "{11D13AC5-2FA6-4E48-AAE4-89D3681C37F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7E5B3D8E-32EF-4D27-B36C-AFAC1D27E748}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{83B05D0B-9EDE-4C09-BB2D-C159E938E173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAP.NSubstitute.FluentAssertionsBridge.Tests", "test\PAP.NSubstitute.FluentAssertionsBridge.Tests\PAP.NSubstitute.FluentAssertionsBridge.Tests.csproj", "{B07DB429-7337-4C2B-987D-3F652F1C19F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAP.NSubstitute.FluentAssertionsBridge.Tests", "test\PAP.NSubstitute.FluentAssertionsBridge.Tests\PAP.NSubstitute.FluentAssertionsBridge.Tests.csproj", "{B07DB429-7337-4C2B-987D-3F652F1C19F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "..\buildscript\_build.csproj", "{E2BB1D32-BF9C-4FC3-A377-892685C8CA53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "buildscript", "buildscript", "{6C9798AA-C561-4348-82E0-7D931660B3E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,8 @@ Global
 		{B07DB429-7337-4C2B-987D-3F652F1C19F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B07DB429-7337-4C2B-987D-3F652F1C19F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B07DB429-7337-4C2B-987D-3F652F1C19F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BB1D32-BF9C-4FC3-A377-892685C8CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BB1D32-BF9C-4FC3-A377-892685C8CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{11D13AC5-2FA6-4E48-AAE4-89D3681C37F0} = {7E5B3D8E-32EF-4D27-B36C-AFAC1D27E748}
 		{B07DB429-7337-4C2B-987D-3F652F1C19F6} = {83B05D0B-9EDE-4C09-BB2D-C159E938E173}
+		{E2BB1D32-BF9C-4FC3-A377-892685C8CA53} = {6C9798AA-C561-4348-82E0-7D931660B3E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4315EE1A-1160-48CA-9B95-41A2B3458B39}
