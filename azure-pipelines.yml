@@ -9,5 +9,14 @@ container: mcr.microsoft.com/dotnet/core/sdk:3.1-bionic
 steps:
 - script: |
     chmod +x ./build.sh
+  displayName: 'Make Build Script Executable'
+
+- script: |
     ./build.sh --target RunTests
   displayName: 'Run Build Script'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+
+- script: |
+    ./build.sh --target Publish
+  displayName: 'Run Build Script & Publish'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))

@@ -16,7 +16,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 [UnsetVisualStudioEnvironmentVariables]
 class Build : NukeBuild
 {
-    public static int Main () => Execute<Build>(x => x.RunTests, x=> x.Pack);
+    public static int Main () => Execute<Build>(x => x.RunTests, x=> x.Publish);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
@@ -76,5 +76,12 @@ class Build : NukeBuild
                 .SetNoRestore(true)
                 .SetConfiguration(Configuration)
                 .SetVersion(GitVersion.NuGetVersionV2));
+        });
+
+    Target Publish => _ => _
+        .DependsOn(Pack)
+        .Executes(() =>
+        {
+            //TODO: Publish nuget packages to nuget.org
         });
 }
