@@ -12,7 +12,7 @@ The library provides a static method called 'Verify.That<T>' that takes an 'Acti
 For example, the following code verifies that 'Register' method called with expected object one time :
 
 ```c#
-using PAP.NSubstitute.FluentAssertionsBridge
+using PAP.NSubstitute.FluentAssertionsBridge;
 
 ...
 var service = Substitute.For<IRegistrationService>();
