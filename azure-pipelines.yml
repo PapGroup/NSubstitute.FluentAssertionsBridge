@@ -12,3 +12,11 @@ steps:
     chmod +x ./build.sh
     ./build.sh
   displayName: 'Run Build Script'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: .\artifacts
+    artifactName: artifacts
+    parallel: true
+    parallelCount: 8
+  displayName: 'Publish artifacts'
