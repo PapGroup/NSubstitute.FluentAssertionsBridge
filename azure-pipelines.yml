@@ -15,7 +15,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: .\artifacts
+    pathtoPublish: artifacts
     artifactName: artifacts
     parallel: true
     parallelCount: 8
