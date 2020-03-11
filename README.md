@@ -10,7 +10,7 @@ a library for bridging between NSubstitute and FluentAssertions in order to veri
 ## Installation
 | Source | Link |
 |:------:|:------:|
-| Nuget | [![Build Status](https://img.shields.io/nuget/v/PAP.NSubstitute.FluentAssertionsBridge)](https://www.nuget.org/packages/PAP.NSubstitute.FluentAssertionsBridge/) |
+| Nuget | [![Nuget Version](https://img.shields.io/nuget/v/PAP.NSubstitute.FluentAssertionsBridge)](https://www.nuget.org/packages/PAP.NSubstitute.FluentAssertionsBridge/) |
 
 ## Usage
 The library provides a static method called 'Verify.That<T>' that takes an 'Action<T>' parameter for passing an assertion.
